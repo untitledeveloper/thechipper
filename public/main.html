@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chip'per</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+<body>
+    
+    <header class="navbar">
+        <h1 class="header1">The Chip'per</h1>
+        <nav>
+            <ul class="navItems">
+                <li>
+                    <div class="button userIcon">
+                        <a href="#"><i class="far fa-user"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button navItem">
+                        <a href="#">Login</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button navItem">
+                        <a href="#">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="homepageContent" id="homepageContent">
+
+        <!-- Post card template -->
+        <div class="card">
+            <div class="cardHeader">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ex amet obcaecati, itaque qui optio possimus aut praesentium aspernatur quidem veniam laborum. Enim facere obcaecati aliquid in eos minus et?</h2>
+            </div>
+            <div class="cardBody">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ex amet obcaecati, itaque qui optio possimus aut praesentium aspernatur quidem veniam laborum. Enim facere obcaecati aliquid in eos minus et?</p>
+            </div>
+            <div class="cardFooter">
+                <ul>
+                    <li>
+                        <button><i class="far fa-comment-alt"></i></button>
+                    </li>
+                    <li>
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {{#if isLoggedIn}}
+        <!-- Add new post button -->
+        <button class="button newPostButton"><i class="fas fa-plus"></i></button>
+        {{/if}}
+        
+    </section>
+
+
+</body>
+</html>

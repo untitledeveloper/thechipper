@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{#block "title"}}
+    <title>TravelBug</title>
+    {{/block}}
+    {{#if isCuratorRoute}}
+        <script src="/js/iscurate.js"></script>
+        {{else}}
+        <script src="/js/isuser.js"></script>
+    {{/if}}
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {{{block "head"}}}
+</head>
+<body class="text-gray-600 font-main">
+    <div><!--content wrapper-->
+
+        <div class="bg-blue-200"><!--nav wrapper-->
+            <div class="sm:flex justify-between">
+                
+                <header class="flex text-6xl sm:text-7xl md:text-8xl font-bold p-3"><!--Main heading-->
+                    <h1><a href="/{{#if isCuratorRoute}}curator/{{/if}}">TravelBug</a></h1>
+                    <a href="/{{#if isCuratorRoute}}curator/{{/if}}"><img src="/img/flying beetle.png" class="h-12 mt-1"></a>
+                </header>
+
+                <div class="ml-10 pl-5 sm:mt-5"><!--login sign up buttons-->
+                    {{#if isLoggedIn}}
+                    <button class="logout-link text-sm sm:text-base bg-white border-red-400 text-red-400 rounded-lg py-2 px-4 mr-5 mt-3 hover:bg-red-400 hover:text-white hover:duration-500">
+                        Logout
+                    </button>
+                    {{else}}
+                    <button class="text-sm sm:text-base bg-white border-red-400 text-red-400 rounded-lg py-2 px-4 mr-5 mt-3 hover:bg-red-400 hover:text-white hover:duration-500">
+                        <a href="/signup">Sign Up</a>
+                    </button>
+                    <button class="text-sm sm:text-base bg-white border-red-400 text-red-400 rounded-lg py-2 px-4 mr-5 mt-3 hover:bg-red-400 hover:text-white hover:duration-500">
+                        <a href="/login">Log in</a>
+                    </button>
+                    {{/if}}
+                </div>
+            </div>
+        </div><!--end nav-->
+        <main class="bg-blue-400 px-2"> 
+            {{{ body }}}
+            <footer class="bg-gray-500 text-gray-200 text-lg">
+                <ul class="flex flex-row ml-10">
+                    <li class="p-4">
+                        <a href="#">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="p-4">
+                        <a href="#">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/223d4625d3.js" crossorigin="anonymous"></script>
+    {{{block "scripts"}}}
+    {{#if isLoggedIn}}
+        <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+</html>

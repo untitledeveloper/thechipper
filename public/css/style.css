@@ -1,0 +1,254 @@
+h1, h2, h3, p, a, input, label, textarea {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+button {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    text-decoration: none;
+    resize: none;
+    outline: 0;
+
+}
+
+.textarea {
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 300px;
+}
+
+.header1 {
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.header2 {
+    font-size: 26px;
+}
+
+.header3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    background-color: rgb(253, 247, 166);
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+i {
+    font-size: 16px;
+}
+
+.navItems {
+    display: flex;
+}
+
+.homepageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* OG Card style
+ .card {
+    max-width: 70%;
+    margin: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px 2px rgba(185, 185, 185, 0.541);;
+    border-radius: 8px;
+} */
+
+.card {
+    max-width: 70%;
+    margin: 2%;
+    border: 1px solid #c5c5c5;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.cardHeader {
+    border-radius: 8px 8px 0 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cardBody {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: max-content;
+}
+
+.cardFooter {
+    /* background-color: rgb(255, 175, 175); */
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+}
+
+.userPageCards {
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+}
+
+.newPostCards {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    width: max-content;
+    padding: 20px;
+}
+
+.signupForm {
+    width: max-content;
+    padding: 20px;
+}
+
+.loginFormFooter {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    outline: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.label {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.navItem {
+    max-width: max-content;
+    padding: 15px;
+
+}
+
+.userIcon {
+    padding: 15px;
+}
+
+.button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid #c5c5c5;
+}
+
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.primary {
+    background-color: rgb(152, 200, 255);
+    font-size: 16px;
+    color: white;
+}
+
+.secondary {
+    background-color: rgb(255, 152, 169);
+    font-size: 16px;
+    color: white;
+}
+
+.newPostButton {
+    position: fixed;
+    padding: 25px;
+    bottom: 3%;
+    right: 4%;
+
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: rgb(152 200 255);
+    box-shadow: 0px 3px 10px 2px rgba(185, 185, 185, 0.541);
+}
+
+/* .input {
+    padding: 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px 2px rgba(185, 185, 185, 0.541);
+    border-radius: 10px;
+} */
+
+.unselect {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .header1 {
+        display: none;
+    }
+}

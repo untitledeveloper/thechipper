@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chip'per</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+<body>
+    
+    <header class="navbar">
+        <a class="header1" href="/">The Chip'per</a>
+        <nav>
+            <ul class="navItems">
+                {{!-- {{#if isLoggedIn}} --}}
+                <li>
+                    <div class="button userIcon">
+                        <a href="/userPage"><i class="far fa-user"></i></a>
+                    </div>
+                </li>
+                 <li>
+                    <div class="button navItem">
+                        <a href="#">Logout</a>
+                    </div>
+                </li>
+                {{!-- {{else}} --}}
+                <li>
+                    <div class="button navItem">
+                        <a href="/login">Login</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button navItem">
+                        <a href="/signup">Sign Up</a>
+                    </div>
+                </li>
+                {{!-- {{/if}} --}}
+            </ul>
+        </nav>
+    </header>
+
+    <section class="homepageContent" id="homepageContent">
+        {{{body}}}
+
+        {{!-- {{#if isLoggedIn}}
+        <a class="button newPostButton" href="/newPost"><i class="fas fa-plus"></i></a>
+        {{/if}} --}}
+    </section>
+
+</body>
+</html>
